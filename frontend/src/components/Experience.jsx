@@ -23,7 +23,9 @@ export default function Experience({ t }) {
                   <h3 className="font-serif text-2xl font-medium text-slate-50">{role.title}</h3>
                   <span className="font-mono text-xs uppercase tracking-[0.2em] text-[#D4AF37]">{role.period}</span>
                 </div>
-                <p className="mt-1 text-sm text-slate-400">{role.company}</p>
+                <p className="mt-1 text-sm text-slate-400">
+                  {role.company} · {role.location}
+                </p>
                 <ul className="mt-6 space-y-3">
                   {role.achievements.map((a) => (
                     <li key={a} className="flex items-start gap-3 text-sm leading-relaxed text-slate-300">
@@ -36,6 +38,13 @@ export default function Experience({ t }) {
             </Reveal>
           ))}
         </div>
+
+        <Reveal delay={0.1} className="mt-14">
+          <div className="border border-white/10 bg-[#0B132B]/60 p-7 sm:p-9" data-testid="earlier-career">
+            <p className="font-mono text-xs uppercase tracking-[0.25em] text-[#D4AF37]/90">{t.earlier.label}</p>
+            <p className="mt-3 max-w-4xl text-sm leading-relaxed text-slate-300">{t.earlier.text}</p>
+          </div>
+        </Reveal>
       </div>
     </section>
   );
