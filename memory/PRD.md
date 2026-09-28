@@ -34,6 +34,14 @@ Build a professional, high-converting single-page portfolio website for "Eduard 
 - P1: Admin view for inquiries (GET /api/inquiries exists, no UI).
 - P2: Projects/case-study section with imagery; downloadable CV PDF; SEO structured data (Person schema).
 
+## SEO (implemented 2026-09-28, preview env)
+- Static head: unique title (57 chars), 150-char description, robots meta (index/follow), full Open Graph + Twitter card (no absolute URLs — production domain not yet confirmed), og:locale en_US + ro_RO alternate, ET favicon + generated apple-touch-icon.png.
+- JSON-LD `Person` node: real data only (name, jobTitle, email, phone, Ploiești/RO, worksFor Qair Renewables Romania, LinkedIn sameAs, knowsAbout). No url/image until domain confirmed.
+- `<noscript>` content fallback with real h1 + hero copy + contact line.
+- robots.txt (explicit AI-crawler group, Disallow /api/) and llms.txt in public/ — both verified served as real files, not the SPA shell.
+- sitemap.xml intentionally omitted until production domain is confirmed.
+- Pending after deploy: canonical/og:url/og:image + sitemap (need live domain), enable "Search Engine Crawling and Optimisation" toggle, re-verify on live domain.
+
 ## Email Notifications (implemented 2026-09-28)
 - Every contact-form submission triggers an email to OWNER_EMAIL (eduard.toader@gmail.com) via Emergent-managed Resend proxy (EMERGENT_EMAIL_KEY in backend/.env).
 - Server-side template only (name, email, phone, type, message — all escaped); fixed subject; guardrail gate `_assert_safe_email` runs on every send; send failures never block the inquiry save (`email_sent` flag in response).
