@@ -126,11 +126,11 @@ export const translations = {
       toastError: "Something went wrong. Please try again or email me directly.",
       card: {
         emailLabel: "Email",
-        email: "eduard.toader@example.com",
+        email: "eduard.toader@gmail.com",
         phoneLabel: "Phone",
-        phone: "+40 700 000 000",
+        phone: "+40 723 772 210",
         locationLabel: "Based in",
-        location: "Bucharest, Romania",
+        location: "Ploiești, Romania",
       },
     },
     footer: {
@@ -265,11 +265,11 @@ export const translations = {
       toastError: "Ceva nu a funcționat. Încearcă din nou sau scrie-mi direct pe email.",
       card: {
         emailLabel: "Email",
-        email: "eduard.toader@example.com",
+        email: "eduard.toader@gmail.com",
         phoneLabel: "Telefon",
-        phone: "+40 700 000 000",
+        phone: "+40 723 772 210",
         locationLabel: "Bazat în",
-        location: "București, România",
+        location: "Ploiești, România",
       },
     },
     footer: {
