@@ -30,6 +30,11 @@ Build a professional, high-converting single-page portfolio website for "Eduard 
 - About bio, competencies and skill tags rewritten around real land-acquisition/permitting profile.
 
 ## Backlog
-- P0: Swap in real portrait; replace placeholder company names/stats with LinkedIn data.
-- P1: Admin view for inquiries (GET /api/inquiries exists, no UI); email notification on new inquiry (Resend).
+- P0: Swap in real portrait.
+- P1: Admin view for inquiries (GET /api/inquiries exists, no UI).
 - P2: Projects/case-study section with imagery; downloadable CV PDF; SEO structured data (Person schema).
+
+## Email Notifications (implemented 2026-09-28)
+- Every contact-form submission triggers an email to OWNER_EMAIL (eduard.toader@gmail.com) via Emergent-managed Resend proxy (EMERGENT_EMAIL_KEY in backend/.env).
+- Server-side template only (name, email, phone, type, message — all escaped); fixed subject; guardrail gate `_assert_safe_email` runs on every send; send failures never block the inquiry save (`email_sent` flag in response).
+- Verified: test inquiry returned `email_sent: true`.
