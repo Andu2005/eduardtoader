@@ -2,8 +2,7 @@ import { useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { ArrowDownRight, ArrowDown } from "lucide-react";
 
-const VISUAL =
-  "https://images.unsplash.com/photo-1768839727824-28d6f0dcd1d1?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMjh8MHwxfHNlYXJjaHwxfHxzb2xhciUyMHJlbmV3YWJsZSUyMGVuZXJneSUyMGZhcm18ZW58MHx8fHwxNzkwNTkwMzA1fDA&ixlib=rb-4.1.0&q=85";
+const VISUAL = "/eduard-toader.webp";
 
 const line = {
   hidden: { y: "115%" },
