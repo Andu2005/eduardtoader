@@ -1,0 +1,127 @@
+{
+  "project_name": "Eduard Toader - Executive Portfolio",
+  "app_type": "Personal Brand / Executive Portfolio Website",
+  "design_direction": "Architectural / Executive Gravitas (Editorial & Modern Corporate)",
+  "language_support": {
+    "languages": ["EN", "RO"],
+    "default": "EN",
+    "toggle_location": "Sticky Navbar top-right alongside CTA"
+  },
+  "typography": {
+    "heading_font": "Cormorant Garamond, serif or Playfair Display, serif",
+    "body_font": "Plus Jakarta Sans, sans-serif or Outfit, sans-serif",
+    "mono_font": "JetBrains Mono, monospace",
+    "scale": {
+      "h1_hero": "text-4xl sm:text-5xl lg:text-6xl tracking-tight font-serif font-semibold",
+      "h2_section": "text-2xl sm:text-3xl lg:text-4xl font-serif font-medium tracking-normal",
+      "h3_card": "text-xl sm:text-2xl font-serif font-medium",
+      "body_lead": "text-lg text-slate-300 font-sans leading-relaxed",
+      "body_regular": "text-base text-slate-400 font-sans leading-relaxed",
+      "label_accent": "text-xs uppercase tracking-[0.2em] font-mono text-amber-400/90"
+    }
+  },
+  "colors": {
+    "archetype": "Architectural Prestige & Sustainable Energy",
+    "theme": "Dark Executive Ink base with warm off-white containers and subtle metallic gold accents",
+    "palette": {
+      "bg_primary": "#0B132B",
+      "bg_secondary": "#1C2541",
+      "bg_card": "rgba(28, 37, 65, 0.6)",
+      "bg_card_hover": "rgba(28, 37, 65, 0.95)",
+      "text_primary": "#F8F9FA",
+      "text_secondary": "#94A3B8",
+      "accent_gold": "#D4AF37",
+      "accent_gold_muted": "#C5A059",
+      "accent_teal": "#14B8A6",
+      "border_subtle": "rgba(255, 255, 255, 0.1)",
+      "border_active": "rgba(212, 175, 55, 0.4)"
+    }
+  },
+  "spacing_and_layout": {
+    "container_padding": "px-6 sm:px-12 lg:px-20",
+    "section_gap": "py-24 sm:py-32",
+    "grid_bento": "grid grid-cols-1 md:grid-cols-12 gap-6 sm:gap-8"
+  },
+  "sections": [
+    {
+      "name": "Header / Navbar",
+      "type": "Sticky Glassmorphism Nav",
+      "features": ["Logo / Brand Mark ('ET')", "Nav Links (About, Experience, Services/Competencies, Projects, Contact)", "Language Switcher (RO / EN toggle)", "Primary CTA Button ('Get in Touch' / 'Contactează-mă')"],
+      "test_ids": {
+        "navbar": "sticky-navbar",
+        "lang_toggle": "language-toggle-button",
+        "contact_cta": "nav-contact-cta"
+      }
+    },
+    {
+      "name": "Hero Section",
+      "type": "Kinetic Hero with Line-by-Line Reveal",
+      "features": ["Overline badge: 'Real Estate & Renewable Energy Strategic Director'", "Massive H1 title", "Spotlight executive portrait frame", "Key statistics tickers (€150M+ Projects Managed, 250MW+ Renewable Capacity, 15+ Yrs Leadership)", "Primary CTA ('Explore Portfolio') & Secondary CTA ('Download CV / Contact')"],
+      "test_ids": {
+        "hero_heading": "hero-headline",
+        "hero_portrait": "hero-executive-portrait",
+        "hero_cta": "hero-primary-cta"
+      }
+    },
+    {
+      "name": "Editorial Marquee Strip",
+      "type": "Slow Kinematic Ribbon",
+      "content": "REAL ESTATE DEVELOPMENT • RENEWABLE ENERGY (SOLAR/WIND) • COMMERCIAL PROJECT OVERSIGHT • ASSET MANAGEMENT • INFRASTRUCTURE LEADERSHIP"
+    },
+    {
+      "name": "About Me",
+      "type": "Asymmetric Narrative Layout",
+      "features": ["Biography detailing career evolution across real estate development and green energy", "Core leadership philosophy", "Bilingual text rendering", "Key impact pillars"]
+    },
+    {
+      "name": "Professional Experience",
+      "type": "Interactive Timeline & Case Grid",
+      "features": ["3-4 Executive Roles (Job Title, Organization, Dates, Key Achievements)", "Filter by Domain (All, Real Estate, Renewable Energy)", "Achievement bullet points with measurable outcomes"],
+      "test_ids": {
+        "experience_timeline": "experience-timeline-container"
+      }
+    },
+    {
+      "name": "Core Competencies & Services",
+      "type": "Bento Grid",
+      "features": ["Strategic Project Oversight", "Solar & Wind Project Permitting & EPC", "Commercial Real Estate Acquisition", "Stakeholder & Regulatory Leadership", "Financial Structuring & Risk Management"],
+      "test_ids": {
+        "competencies_grid": "core-competencies-bento"
+      }
+    },
+    {
+      "name": "Contact & Footer",
+      "type": "High-Converting Inquiry Form & Executive Contact Card",
+      "fields": ["Full Name", "Phone Number", "Email Address", "Inquiry Type Dropdown", "Message Detail"],
+      "features": ["LinkedIn Profile Link (https://www.linkedin.com/in/eduard-toader-07b82912/)", "Direct Email (eduard.toader@example.com / placeholder)", "Interactive Toast Feedback on Submit (Sonner)", "Copyright & Bilingual footer links"],
+      "test_ids": {
+        "contact_form": "contact-inquiry-form",
+        "input_phone": "contact-phone-input",
+        "input_email": "contact-email-input",
+        "input_message": "contact-message-input",
+        "submit_btn": "contact-submit-button",
+        "linkedin_link": "linkedin-profile-link"
+      }
+    }
+  ],
+  "image_urls": {
+    "executive_portrait": "https://images.unsplash.com/photo-1560250097-0b93528c311a?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NDh8MHwxfHNlYXJjaHwxfHxleGVjdXRpdmUlMjBidXNpbmVzc21hbiUyMHBvcnRyYWl0fGVufDB8fHx8MTc5MDU5MDMwNHww&ixlib=rb-4.1.0&q=85",
+    "real_estate_architecture": "https://images.unsplash.com/photo-1613490493576-7fde63acd811?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxODd8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjBhcmNoaXRlY3R1cmUlMjByZWFsJTIwZXN0YXRlJTIwYnVpbGRpbmd8ZW58MHx8fHwxNzkwNTkwMzA1fDA&ixlib=rb-4.1.0&q=85",
+    "solar_renewable_energy": "https://images.unsplash.com/photo-1768839727824-28d6f0dcd1d1?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMjh8MHwxfHNlYXJjaHwxfHxzb2xhciUyMHJlbmV3YWJsZSUyMGVuZXJneSUyMGZhcm18ZW58MHx8fHwxNzkwNTkwMzA1fDA&ixlib=rb-4.1.0&q=85",
+    "commercial_development": "https://images.unsplash.com/photo-1748063578185-3d68121b11ff?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxODd8MHwxfHNlYXJjaHw0fHxtb2Rlcm4lMjBhcmNoaXRlY3R1cmUlMjByZWFsJTIwZXN0YXRlJTIwYnVpbGRpbmd8ZW58MHx8fHwxNzkwNTkwMzA1fDA&ixlib=rb-4.1.0&q=85"
+  },
+  "component_path": "/app/frontend/src/App.js",
+  "instructions_to_main_agent": [
+    "Ensure all file extensions match JavaScript codebase (.js / .jsx).",
+    "Implement Lenis smooth scrolling or Framer Motion scroll motion for Awwwards quality feel.",
+    "Bilingual support should be reactive using React state with rich English & Romanian content translations.",
+    "Form must validate email, phone number, and message, and show a sleek toast notification via Sonner upon submission.",
+    "All key interactive elements MUST include data-testid attributes for automated testing."
+  ],
+  "UNIVERSAL GUIDELINES FOR MAIN AGENT": [
+    "Do not use generic centered layouts or Inter font for main headings.",
+    "Ensure contrast meets APCA / WCAG standards with dark ink background (#0B132B) and gold/white typography.",
+    "Never use AI assistant emoji characters like 🤖🧠💭💡 for icons; use Lucide React or Radix icons.",
+    "Every interaction must feature smooth micro-animations."
+  ]
+}
