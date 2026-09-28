@@ -16,7 +16,7 @@ Build a professional, high-converting single-page portfolio website for "Eduard 
 - Bilingual EN/RO full-site content with navbar toggle.
 - Kinetic hero: masked line-by-line reveal, gold serif accent line, parallax portrait with spotlight frame, stats strip.
 - Slow editorial marquee (45s, pause on hover).
-- About (asymmetric editorial layout + pillars), Experience timeline (4 placeholder roles), Competencies bento grid (5 cards, 2 with imagery) + skill tags.
+- About (asymmetric editorial layout + pillars; decorative building photo removed per user request 2026-09-28), Experience timeline (4 placeholder roles), Competencies bento grid (5 cards, "Land Acquisition" uses aerial land-parcels photo, "Permitting" uses solar photo) + skill tags.
 - Contact: functional form (name, phone, email, inquiry type, message) saved to MongoDB + success/error toasts; LinkedIn link; footer.
 - Lenis momentum scrolling, custom scrollbar, grain overlay, ET favicon, SEO title/meta.
 

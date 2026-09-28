@@ -1,8 +1,5 @@
 import Reveal from "@/components/Reveal";
 
-const IMAGE =
-  "https://images.unsplash.com/photo-1748063578185-3d68121b11ff?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxODd8MHwxfHNlYXJjaHw0fHxtb2Rlcm4lMjBhcmNoaXRlY3R1cmUlMjByZWFsJTIwZXN0YXRlJTIwYnVpbGRpbmd8ZW58MHx8fHwxNzkwNTkwMzA1fDA&ixlib=rb-4.1.0&q=85";
-
 export default function About({ t }) {
   return (
     <section id="about" className="px-6 py-24 sm:px-12 sm:py-32 lg:px-20" data-testid="about-section">
@@ -11,12 +8,6 @@ export default function About({ t }) {
           <Reveal>
             <p className="mb-4 font-mono text-xs uppercase tracking-[0.3em] text-[#D4AF37]/90">01 — {t.label}</p>
             <h2 className="font-serif text-3xl font-medium leading-tight text-slate-50 sm:text-4xl">{t.heading}</h2>
-          </Reveal>
-          <Reveal delay={0.15} className="mt-10 hidden lg:block">
-            <div className="relative aspect-[4/3] overflow-hidden">
-              <img src={IMAGE} alt="" className="h-full w-full object-cover transition-transform duration-700 hover:scale-105" />
-              <div aria-hidden="true" className="absolute inset-0 border border-white/10" />
-            </div>
           </Reveal>
         </div>
 

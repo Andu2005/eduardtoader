@@ -1,13 +1,13 @@
 import Reveal from "@/components/Reveal";
 import { Compass, Sun, Building2, Handshake, ShieldCheck } from "lucide-react";
 
-const REAL_ESTATE =
-  "https://images.unsplash.com/photo-1613490493576-7fde63acd811?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxODd8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjBhcmNoaXRlY3R1cmUlMjByZWFsJTIwZXN0YXRlJTIwYnVpbGRpbmd8ZW58MHx8fHwxNzkwNTkwMzA1fDA&ixlib=rb-4.1.0&q=85";
+const LAND_AERIAL =
+  "https://images.unsplash.com/photo-1516822277566-bb38424a2b77?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1Nzh8MHwxfHNlYXJjaHwxfHxhZXJpYWwlMjB2aWV3JTIwZ3JlZW4lMjBhZ3JpY3VsdHVyYWwlMjBmaWVsZHMlMjBsYW5kc2NhcGUlMjBkcm9uZXxlbnwwfHx8fDE3OTA1OTUyMDd8MA&ixlib=rb-4.1.0&q=85";
 const SOLAR =
   "https://images.unsplash.com/photo-1768839727824-28d6f0dcd1d1?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMjh8MHwxfHNlYXJjaHwxfHxzb2xhciUyMHJlbmV3YWJsZSUyMGVuZXJneSUyMGZhcm18ZW58MHx8fHwxNzkwNTkwMzA1fDA&ixlib=rb-4.1.0&q=85";
 
 const ICONS = [Compass, Sun, Building2, Handshake, ShieldCheck];
-const IMAGES = [REAL_ESTATE, SOLAR, null, null, null];
+const IMAGES = [LAND_AERIAL, SOLAR, null, null, null];
 
 export default function Competencies({ t }) {
   const spans = ["md:col-span-7", "md:col-span-5", "md:col-span-4", "md:col-span-4", "md:col-span-4"];
