@@ -178,7 +178,40 @@ async def create_inquiry(payload: InquiryCreate):
     )
     email_id = await send_email(to=OWNER_EMAIL, subject="New inquiry — portfolio contact form", html=html)
 
-    return {**inquiry.model_dump(), "email_sent": email_id is not None}
+    is_ro = inquiry.lang == "ro"
+    confirm_subject = (
+        "Mulțumesc pentru solicitare — Eduard Toader" if is_ro
+        else "Thank you for your inquiry — Eduard Toader"
+    )
+    confirm_body = (
+        f"Bună {escape(inquiry.name)}, îți mulțumesc pentru mesaj. Am primit solicitarea ta "
+        f"(„{escape(inquiry.inquiry_type)}”) și revin cu un răspuns în maximum două zile lucrătoare."
+        if is_ro else
+        f"Hi {escape(inquiry.name)}, thank you for reaching out. I've received your inquiry "
+        f"(\"{escape(inquiry.inquiry_type)}\") and will get back to you within two business days."
+    )
+    confirm_signoff = "Cu respect,<br>Eduard Toader" if is_ro else "Best regards,<br>Eduard Toader"
+    confirm_footer = (
+        "Acesta este un email automat de confirmare trimis de formularul de contact de pe Eduard Toader Portfolio."
+        if is_ro else
+        "This is an automated confirmation from the contact form on Eduard Toader Portfolio."
+    )
+    confirm_html = (
+        '<table role="presentation" width="100%" style="background:#f6f6f4;padding:24px">'
+        '<tr><td><table role="presentation" width="100%" style="max-width:560px;margin:0 auto;'
+        'background:#ffffff;border:1px solid #e5e5e0;font-family:Arial,sans-serif">'
+        '<tr><td style="padding:20px 24px;border-bottom:3px solid #D4AF37">'
+        f'<span style="font-size:16px;font-weight:bold;color:#0B132B">{escape(EMAIL_FROM_NAME)}</span>'
+        '</td></tr>'
+        f'<tr><td style="padding:24px;font-size:14px;color:#1a1a1a;line-height:1.6">'
+        f'{confirm_body}<br><br>{confirm_signoff}</td></tr>'
+        f'<tr><td style="padding:14px 24px;font-size:11px;color:#999;border-top:1px solid #eee">'
+        f'{confirm_footer}</td></tr>'
+        '</table></td></tr></table>'
+    )
+    confirm_id = await send_email(to=inquiry.email, subject=confirm_subject, html=confirm_html)
+
+    return {**inquiry.model_dump(), "email_sent": email_id is not None, "confirmation_sent": confirm_id is not None}
 
 
 @api_router.get("/inquiries", response_model=List[Inquiry])

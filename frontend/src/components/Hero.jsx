@@ -2,8 +2,8 @@ import { useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { ArrowDownRight, ArrowDown } from "lucide-react";
 
-const PORTRAIT =
-  "https://images.unsplash.com/photo-1560250097-0b93528c311a?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NDh8MHwxfHNlYXJjaHwxfHxleGVjdXRpdmUlMjBidXNpbmVzc21hbiUyMHBvcnRyYWl0fGVufDB8fHx8MTc5MDU5MDMwNHww&ixlib=rb-4.1.0&q=85";
+const VISUAL =
+  "https://images.unsplash.com/photo-1768839727824-28d6f0dcd1d1?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMjh8MHwxfHNlYXJjaHwxfHxzb2xhciUyMHJlbmV3YWJsZSUyMGVuZXJneSUyMGZhcm18ZW58MHx8fHwxNzkwNTkwMzA1fDA&ixlib=rb-4.1.0&q=85";
 
 const line = {
   hidden: { y: "115%" },
@@ -108,12 +108,21 @@ export default function Hero({ t, onNav }) {
               className="absolute -top-10 left-1/2 h-56 w-[130%] -translate-x-1/2 rounded-full bg-[#D4AF37]/20 blur-[90px]"
             />
             <img
-              src={PORTRAIT}
+              src={VISUAL}
               alt={t.portraitAlt}
               data-testid="hero-executive-portrait"
-              className="h-full w-full object-cover grayscale-[15%]"
+              className="h-full w-full object-cover"
             />
-            <div aria-hidden="true" className="absolute inset-0 bg-gradient-to-t from-[#0B132B]/60 via-transparent to-transparent" />
+            <div aria-hidden="true" className="absolute inset-0 bg-gradient-to-t from-[#0B132B]/80 via-transparent to-transparent" />
+            <div className="absolute bottom-0 left-0 flex w-full items-center gap-3 p-5">
+              <span className="flex h-10 w-10 shrink-0 items-center justify-center border border-[#D4AF37]/70 bg-[#0B132B]/80 font-serif text-base font-semibold text-[#D4AF37] backdrop-blur-sm">
+                ET
+              </span>
+              <div>
+                <p className="font-serif text-lg leading-tight text-slate-50">Eduard Toader</p>
+                <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-[#D4AF37]/90">{t.visualCaption}</p>
+              </div>
+            </div>
           </motion.div>
         </motion.div>
       </div>

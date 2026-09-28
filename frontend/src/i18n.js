@@ -19,7 +19,8 @@ export const translations = {
         { value: "248 ha", label: "Solar & BESS Parks Secured" },
         { value: "6+", label: "BESS Plots Secured" },
       ],
-      portraitAlt: "Portrait of Eduard Toader",
+      portraitAlt: "Solar park — renewable energy development by Eduard Toader",
+      visualCaption: "Renewable Development",
       scroll: "Scroll",
     },
     marquee: [
@@ -158,7 +159,8 @@ export const translations = {
         { value: "248 ha", label: "Parcuri Solare & BESS Securizate" },
         { value: "6+", label: "Amplasamente BESS Securizate" },
       ],
-      portraitAlt: "Portret Eduard Toader",
+      portraitAlt: "Parc solar — dezvoltare în energie regenerabilă, Eduard Toader",
+      visualCaption: "Dezvoltare Regenerabilă",
       scroll: "Derulează",
     },
     marquee: [

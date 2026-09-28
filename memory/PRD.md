@@ -21,7 +21,7 @@ Build a professional, high-converting single-page portfolio website for "Eduard 
 - Lenis momentum scrolling, custom scrollbar, grain overlay, ET favicon, SEO title/meta.
 
 ## Placeholders to replace by user
-- Portrait photo (user said they have one — not yet uploaded).
+- Portrait photo: user declined uploading for now (2026-09-28); hero uses a branded solar-park visual with ET monogram caption instead of a stock portrait.
 - Contact card updated (2026-09-28): eduard.toader@gmail.com, +40 723 772 210, Ploiești, Romania.
 
 ## LinkedIn Data (integrated 2026-09-28)
